@@ -40,8 +40,8 @@ const Home = () => {
         <div className={styles.hero_bg}>
           <div className={styles.hero_slant_container}>
             <div className={styles.nav_container}>
-              <img
-                src="./logo.svg"
+              <Image
+                src="./Logo.svg"
                 alt="A descriptive alt text"
                 width={148}
                 height={60}
