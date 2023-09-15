@@ -32,8 +32,12 @@
       background-position: 0 125%, 0 0;
       background-repeat: no-repeat, repeat;
       background-size: cover, auto;
+      height: 140vh;
+    }
+    @media screen and (max-width: 600) {
       height: 175vh;
     }
+
     .hero_bg {
       z-index: 0;
       flex-direction: row;
