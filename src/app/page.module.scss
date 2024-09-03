@@ -18,21 +18,21 @@
   background-attachment: scroll !important;
 
   .hero {
+    
     color: #d5d7de;
     background-color: #2c2f35;
-    padding-top: 2rem;
     padding-bottom: 9rem;
     position: relative;
     overflow: hidden;
     height: 100%;
-
+  
     @media screen and (max-width: 1024px) {
       background-image: url("./../../public//background.svg"),
         linear-gradient(#1f1c1a, #2c2f35);
       background-position: 0 125%, 0 0;
       background-repeat: no-repeat, repeat;
       background-size: cover, auto;
-      height: 140vh;
+      height: 140vh; 
     }
     @media screen and (max-width: 600) {
       height: 175vh;
@@ -56,14 +56,14 @@
         z-index: 100;
         width: 50%;
         background-color: #33363c;
-        position: relative;
+        // position: relative;
         @media screen and (max-width: 1024px) {
           width: 100%;
           background-color: inherit;
         }
         .nav_container {
           height: 100px;
-          width: 80%;
+          width: 55%;
           margin: 0 auto;
           display: flex;
           justify-content: flex-start;
@@ -75,7 +75,6 @@
             color: #fff;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 6px;
-
             border-radius: 5px;
             @media screen and (max-width: 1024px) {
               display: block;
@@ -95,7 +94,7 @@
           }
         }
         .hero_content_left {
-          width: 80%;
+          width: 58%;
           margin: 4rem auto;
 
           @media (max-width: 1024px) {
@@ -119,6 +118,7 @@
             margin: 0;
             padding: 0;
             font-size: 3.75rem;
+            color: #ffff;
 
             @media (max-width: 767px) {
               font-size: 2rem;
@@ -130,6 +130,7 @@
             margin-top: 1rem;
             font-size: 1rem;
             font-weight: 300;
+            color: #ffff;
           }
           .chips {
             width: 90%;
@@ -160,10 +161,12 @@
                 font-size: 14px;
                 font-weight: bold;
                 margin-top: 6px;
+                color: #ffff;
               }
               p {
                 font-size: 12px;
-                color: #d5d7de;
+                color: #ffff;
+
               }
             }
           }
@@ -211,8 +214,7 @@
         background-image: url("./../../public//background.svg"),
           linear-gradient(#1f1c1a, #2c2f35);
         z-index: 0;
-        width: 54%;
-
+        width: 50%;
         background-position: 0 125%, 0 0;
         background-repeat: no-repeat, repeat;
         background-size: cover, auto;
@@ -231,7 +233,7 @@
     }
   }
   .w_wave_overlay {
-    margin-left: 6.5rem;
+    margin-left: 15rem;
     color: #fff;
     height: 100px;
     display: flex;
@@ -242,6 +244,20 @@
     @media screen and (max-width: 1024px) {
       margin-left: 2rem;
       display: none;
+    }
+
+    .apply_now_button {
+      color: #0999fc;
+      letter-spacing: 0.02em;
+      cursor: pointer;
+      background-color: transparent;
+      border-radius: 6px;
+      transition: all 0.5s;
+
+      &:hover {
+        background-color: #0999fc;
+        color: white; // Optional: if you want to change the text color on hover
+      }
     }
 
     ul {
@@ -610,7 +626,6 @@
     // height: 80vh;
     display: flex;
     padding: 5rem 0;
-
     justify-content: center;
     align-items: center;
     background-color: #fff;
